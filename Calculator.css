@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=League+Spartan&display=swap');
+*{box-sizing: border-box;}
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: hsl(222, 26%, 31%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 690px;
+    
+}
+.tile{
+    font-size: 25px;
+    margin-left: 3px;
+}
+.calculator{
+    width: 450px;
+    height: 500px;
+    font-family:League Spartan ;
+    cursor: pointer;
+}
+.title-bar{
+    display: flex;
+    color: white;
+   
+}
+.page-no{
+    position: relative;
+    left: 23px;
+    top: 10px;
+    letter-spacing: 13px;
+    font-size: 10px;
+}
+.theme{
+    margin-left: 56%;
+    font-size: 10px;
+    position: relative;
+    top: 20px;
+}
+.screen{
+    
+    height: 100px;
+    border-color: transparent;
+    border-radius: 15px;
+   width:400px ;
+   display: flex;
+   justify-content: flex-end;
+   
+}
+.screen input{
+    background-color:hsl(224, 36%, 15%);
+    width: 400px;
+    border: 0px;
+    border-radius: 15px;
+    text-align: right;
+    color: white;
+    font-size: 45px;
+}
+
+.calculator__keys { 
+    display: grid; 
+    grid-template-columns: 90px 90px 90px 90px;
+    grid-template-rows: 55px 55px 55px 55px;
+    background-color: hsl(223, 31%, 20%);
+    height:315px;
+    margin-top: 20px;
+    border-radius: 15px;
+    width: 400px;
+    text-align: center;
+    padding-left: 7px;
+    
+}
+
+
+button{
+    height: 45px;
+    width: 70px;
+    margin-left: 20px;
+    font-size: 25px;
+    margin-top: 25px;
+    border-radius: 15px;
+   border-color: transparent;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.reset{
+    background-color:  hsl(225, 21%, 49%);
+    color: white;
+}
+.delete{
+    background-color: hsl(225, 21%, 49%) ;
+    color: white;
+}
+.equal{
+    background-color: hsl(2, 74%, 33%);
+   color: white;
+}
+.button{
+    height: 10px;
+    width: 10px;
+    appearance: none;
+    background-color:hsl(6, 63%, 50%);
+    border-radius: 50%;
+    opacity: 0;
+  }
+  input:hover {
+    cursor: pointer;
+  }
+  .tri-state-toggle {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 50px;
+    height: 15px;
+    position: relative;
+    top: 27px;
+    right: 40px;
+    width: 60px;
+  }
+  #one {
+    opacity: 1;
+  }
+
+  @media screen and (max-width:414px) {
+    body{
+        margin: 0%;
+        padding: 0%;
+        background-color: hsl(222, 26%, 31%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 690px;
+        
+    }
+    .calculator{
+        width: 375px;
+        font-family:League Spartan ;
+        margin-left:20px;
+    }
+    .tile{
+        font-size: 25px;
+        margin-left: 5px;
+    }
+    .page-no{
+        position: relative;
+        left: 23px;
+        top: 10px;
+        letter-spacing: 13px;
+        font-size: 10px;
+    }
+    .theme{
+        margin-left: 51%;
+        font-size: 10px;
+        position: relative;
+        top: 20px;
+    }
+    .screen{
+        
+        height: 100px;
+        border-color: transparent;
+        border-radius: 15px;
+       width: 350px ;
+       display: flex;
+       justify-content: flex-end;
+       
+    }
+    .screen input{
+        background-color:hsl(224, 36%, 15%);
+        width: 350px;
+        border: 0px;
+        border-radius: 15px;
+        text-align: right;
+        color: white;
+        font-size: 45px;
+    }
+    
+    .calculator__keys { 
+        display: grid; 
+        grid-template-columns: 80px 80px 80px 80px;
+        grid-template-rows: 55px 55px 55px 55px;
+        background-color: hsl(223, 31%, 20%);
+        height:315px;
+        margin-top: 20px;
+        border-radius: 15px;
+        width: 350px;
+        text-align: center;
+        padding-left: 7px;
+    }
+    
+    
+    button{
+        height: 45px;
+        width: 60px;
+        margin-left: 15px;
+        font-size: 20px;
+        margin-top: 25px;
+        border-radius: 15px;
+       border-color: transparent;
+        font-weight: 700;
+    }
+    
+  }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Calculator app</title>
+  <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="title-bar">
+      <P class="tile">calc</P>
+      <p class="theme">THEME</p>
+      <span class="page-no">123</span>
+      <div class="tri-state-toggle">
+        <input class="button btn-1" type="radio" name="toggle" id="one" />
+        <input class="button btn-2" type="radio" name="toggle" id="two" />
+        <input class="button btn-3" type="radio" name="toggle" id="three" />
+      </div>
+    </div>
+    <div class="screen">
+      <input type="text" class="input" value="">
+    </div>
+    <div class="calculator__keys">
+      <button data-action="clear" class="reset">AC</button>
+      <button class="delete">DEL</button>
+      <button data-action="decimal" class="operator" >.</button>
+      <button class="operator" data-action="divide">/</button>
+      <button class="number">7</button>
+      <button class="number">8</button>
+      <button class="number">9</button>
+      <button class="operator" data-action="multiply">*</button>
+      <button class="number">4</button>
+      <button class="number">5</button>
+      <button class="number">6</button>
+      <button class="operator" data-action="subtract">-</button>
+      <button class="number">1</button>
+      <button class="number">2</button>
+      <button class="number">3</button>
+      <button class="operator" data-action="add">+</button>
+      <button class="number">00</button>
+      <button class="number">0</button>
+      <button class=" equal" data-action="calculate">=</button>
+    </div>
+  </div>
+</body>
+<script src="Calculator.js"></script>
+</html>
